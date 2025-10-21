@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downtown Madison Demographics Summary</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .table-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        th {
+            background: #34495e;
+            color: white;
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }
+        td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        tr:hover {
+            background: #f8f9fa;
+        }
+        .section-header {
+            background: #95a5a6;
+            font-weight: bold;
+            color: white;
+        }
+        .numeric {
+            text-align: right;
+        }
+        .positive { color: #27ae60; font-weight: bold; }
+        .negative { color: #e74c3c; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Downtown Madison Demographics & Socioeconomic Summary</h1>
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th class="numeric">2019</th>
+                    <th class="numeric">2021</th>
+                    <th class="numeric">2023</th>
+                    <th class="numeric">Change 2019-2023</th>
+                    <th class="numeric">% Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="section-header">
+                    <td colspan="6">POPULATION</td>
+                </tr>
+                <tr>
+                    <td>Total Population</td>
+                    <td class="numeric">50,818</td>
+                    <td class="numeric">61,615</td>
+                    <td class="numeric">61,828</td>
+                    <td class="numeric positive">+11,010</td>
+                    <td class="numeric positive">+21.7%</td>
+                </tr>
+                <tr>
+                    <td>Median Age</td>
+                    <td class="numeric">26.1</td>
+                    <td class="numeric">27.0</td>
+                    <td class="numeric">26.4</td>
+                    <td class="numeric positive">+0.3</td>
+                    <td class="numeric positive">+1.1%</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="6">RACE & ETHNICITY</td>
+                </tr>
+                <tr>
+                    <td>White (Non-Hispanic)</td>
+                    <td class="numeric">40,070</td>
+                    <td class="numeric">48,485</td>
+                    <td class="numeric">47,540</td>
+                    <td class="numeric positive">+7,470</td>
+                    <td class="numeric positive">+18.6%</td>
+                </tr>
+                <tr>
+                    <td>White %</td>
+                    <td class="numeric">78.9%</td>
+                    <td class="numeric">78.7%</td>
+                    <td class="numeric">76.9%</td>
+                    <td class="numeric negative">-2.0%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Black/African American</td>
+                    <td class="numeric">1,691</td>
+                    <td class="numeric">2,167</td>
+                    <td class="numeric">2,024</td>
+                    <td class="numeric positive">+333</td>
+                    <td class="numeric positive">+19.7%</td>
+                </tr>
+                <tr>
+                    <td>Black %</td>
+                    <td class="numeric">3.3%</td>
+                    <td class="numeric">3.5%</td>
+                    <td class="numeric">3.3%</td>
+                    <td class="numeric">0.0%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Asian</td>
+                    <td class="numeric">5,242</td>
+                    <td class="numeric">6,335</td>
+                    <td class="numeric">6,397</td>
+                    <td class="numeric positive">+1,155</td>
+                    <td class="numeric positive">+22.0%</td>
+                </tr>
+                <tr>
+                    <td>Asian %</td>
+                    <td class="numeric">10.3%</td>
+                    <td class="numeric">10.3%</td>
+                    <td class="numeric">10.3%</td>
+                    <td class="numeric">0.0%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Hispanic/Latino</td>
+                    <td class="numeric">2,627</td>
+                    <td class="numeric">2,921</td>
+                    <td class="numeric">3,508</td>
+                    <td class="numeric positive">+881</td>
+                    <td class="numeric positive">+33.5%</td>
+                </tr>
+                <tr>
+                    <td>Hispanic %</td>
+                    <td class="numeric">5.2%</td>
+                    <td class="numeric">4.7%</td>
+                    <td class="numeric">5.7%</td>
+                    <td class="numeric positive">+0.5%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="6">SCHOOL & COLLEGE ENROLLMENT</td>
+                </tr>
+                <tr>
+                    <td>Enrolled in School</td>
+                    <td class="numeric">32,023</td>
+                    <td class="numeric">33,963</td>
+                    <td class="numeric">33,380</td>
+                    <td class="numeric positive">+1,357</td>
+                    <td class="numeric positive">+4.2%</td>
+                </tr>
+                <tr>
+                    <td>Enrolled in College</td>
+                    <td class="numeric">27,283</td>
+                    <td class="numeric">27,151</td>
+                    <td class="numeric">26,733</td>
+                    <td class="numeric negative">-550</td>
+                    <td class="numeric negative">-2.0%</td>
+                </tr>
+                <tr>
+                    <td>College Enrollment Rate</td>
+                    <td class="numeric">54.1%</td>
+                    <td class="numeric">44.4%</td>
+                    <td class="numeric">43.5%</td>
+                    <td class="numeric negative">-10.6%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="6">EDUCATIONAL ATTAINMENT (Population 25+)</td>
+                </tr>
+                <tr>
+                    <td>Population 25+ Years</td>
+                    <td class="numeric">16,472</td>
+                    <td class="numeric">25,192</td>
+                    <td class="numeric">25,292</td>
+                    <td class="numeric positive">+8,820</td>
+                    <td class="numeric positive">+53.5%</td>
+                </tr>
+                <tr>
+                    <td>HS Graduate or Higher</td>
+                    <td class="numeric">14,495</td>
+                    <td class="numeric">22,434</td>
+                    <td class="numeric">22,649</td>
+                    <td class="numeric positive">+8,154</td>
+                    <td class="numeric positive">+56.3%</td>
+                </tr>
+                <tr>
+                    <td>HS Graduate or Higher %</td>
+                    <td class="numeric">88.0%</td>
+                    <td class="numeric">89.1%</td>
+                    <td class="numeric">89.6%</td>
+                    <td class="numeric positive">+1.6%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Bachelor's Degree or Higher</td>
+                    <td class="numeric">10,162</td>
+                    <td class="numeric">16,404</td>
+                    <td class="numeric">16,586</td>
+                    <td class="numeric positive">+6,424</td>
+                    <td class="numeric positive">+63.2%</td>
+                </tr>
+                <tr>
+                    <td>Bachelor's Degree or Higher %</td>
+                    <td class="numeric">61.7%</td>
+                    <td class="numeric">65.1%</td>
+                    <td class="numeric">65.6%</td>
+                    <td class="numeric positive">+3.9%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="6">INCOME</td>
+                </tr>
+                <tr>
+                    <td>Median Household Income</td>
+                    <td class="numeric">$39,199</td>
+                    <td class="numeric">$48,995</td>
+                    <td class="numeric">$52,270</td>
+                    <td class="numeric positive">+$13,071</td>
+                    <td class="numeric positive">+33.4%</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="6">POVERTY</td>
+                </tr>
+                <tr>
+                    <td>Below Poverty Level</td>
+                    <td class="numeric">20,091</td>
+                    <td class="numeric">21,450</td>
+                    <td class="numeric">21,556</td>
+                    <td class="numeric positive">+1,465</td>
+                    <td class="numeric positive">+7.3%</td>
+                </tr>
+                <tr>
+                    <td>Poverty Rate</td>
+                    <td class="numeric">48.1%</td>
+                    <td class="numeric">41.1%</td>
+                    <td class="numeric">41.2%</td>
+                    <td class="numeric negative">-6.9%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Deep Poverty Rate</td>
+                    <td class="numeric">34.5%</td>
+                    <td class="numeric">28.4%</td>
+                    <td class="numeric">28.6%</td>
+                    <td class="numeric negative">-5.9%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="6">DISABILITY & LANGUAGE</td>
+                </tr>
+                <tr>
+                    <td>With Disability</td>
+                    <td class="numeric">1,659</td>
+                    <td class="numeric">1,940</td>
+                    <td class="numeric">2,004</td>
+                    <td class="numeric positive">+345</td>
+                    <td class="numeric positive">+20.8%</td>
+                </tr>
+                <tr>
+                    <td>Disability Rate</td>
+                    <td class="numeric">3.3%</td>
+                    <td class="numeric">3.2%</td>
+                    <td class="numeric">3.3%</td>
+                    <td class="numeric">0.0%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Limited English Proficiency</td>
+                    <td class="numeric">330</td>
+                    <td class="numeric">273</td>
+                    <td class="numeric">355</td>
+                    <td class="numeric positive">+25</td>
+                    <td class="numeric positive">+7.6%</td>
+                </tr>
+                <tr>
+                    <td>Limited English Rate</td>
+                    <td class="numeric">0.7%</td>
+                    <td class="numeric">0.4%</td>
+                    <td class="numeric">0.6%</td>
+                    <td class="numeric negative">-0.1%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="6">HOUSING</td>
+                </tr>
+                <tr>
+                    <td>Total Housing Units</td>
+                    <td class="numeric">19,017</td>
+                    <td class="numeric">25,769</td>
+                    <td class="numeric">27,623</td>
+                    <td class="numeric positive">+8,606</td>
+                    <td class="numeric positive">+45.3%</td>
+                </tr>
+                <tr>
+                    <td>Owner Occupied</td>
+                    <td class="numeric">2,895</td>
+                    <td class="numeric">4,197</td>
+                    <td class="numeric">4,431</td>
+                    <td class="numeric positive">+1,536</td>
+                    <td class="numeric positive">+53.1%</td>
+                </tr>
+                <tr>
+                    <td>Owner Occupied %</td>
+                    <td class="numeric">15.2%</td>
+                    <td class="numeric">16.3%</td>
+                    <td class="numeric">16.0%</td>
+                    <td class="numeric positive">+0.8%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Renter Occupied</td>
+                    <td class="numeric">16,122</td>
+                    <td class="numeric">21,572</td>
+                    <td class="numeric">23,192</td>
+                    <td class="numeric positive">+7,070</td>
+                    <td class="numeric positive">+43.8%</td>
+                </tr>
+                <tr>
+                    <td>Renter Occupied %</td>
+                    <td class="numeric">84.8%</td>
+                    <td class="numeric">83.7%</td>
+                    <td class="numeric">84.0%</td>
+                    <td class="numeric negative">-0.8%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Vacancy Rate</td>
+                    <td class="numeric">8.4%</td>
+                    <td class="numeric">7.6%</td>
+                    <td class="numeric">5.8%</td>
+                    <td class="numeric negative">-2.6%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Cost Burdened Rate</td>
+                    <td class="numeric">60.0%</td>
+                    <td class="numeric">52.1%</td>
+                    <td class="numeric">55.2%</td>
+                    <td class="numeric negative">-4.8%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Severe Cost Burdened Rate</td>
+                    <td class="numeric">38.8%</td>
+                    <td class="numeric">34.5%</td>
+                    <td class="numeric">37.2%</td>
+                    <td class="numeric negative">-1.6%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Median Gross Rent</td>
+                    <td class="numeric">$1,225</td>
+                    <td class="numeric">$1,301</td>
+                    <td class="numeric">$1,392</td>
+                    <td class="numeric positive">+$167</td>
+                    <td class="numeric positive">+13.6%</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="6">EMPLOYMENT & COMMUTE</td>
+                </tr>
+                <tr>
+                    <td>Total Workers</td>
+                    <td class="numeric">29,619</td>
+                    <td class="numeric">37,829</td>
+                    <td class="numeric">36,655</td>
+                    <td class="numeric positive">+7,036</td>
+                    <td class="numeric positive">+23.8%</td>
+                </tr>
+                <tr>
+                    <td>Drove Alone %</td>
+                    <td class="numeric">37.8%</td>
+                    <td class="numeric">39.4%</td>
+                    <td class="numeric">37.5%</td>
+                    <td class="numeric negative">-0.3%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Carpool %</td>
+                    <td class="numeric">3.8%</td>
+                    <td class="numeric">4.4%</td>
+                    <td class="numeric">4.2%</td>
+                    <td class="numeric positive">+0.4%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Public Transit %</td>
+                    <td class="numeric">14.3%</td>
+                    <td class="numeric">11.9%</td>
+                    <td class="numeric">10.4%</td>
+                    <td class="numeric negative">-3.9%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Bicycle %</td>
+                    <td class="numeric">8.8%</td>
+                    <td class="numeric">6.8%</td>
+                    <td class="numeric">5.8%</td>
+                    <td class="numeric negative">-3.0%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Walked %</td>
+                    <td class="numeric">30.2%</td>
+                    <td class="numeric">26.5%</td>
+                    <td class="numeric">25.2%</td>
+                    <td class="numeric negative">-5.0%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Work From Home %</td>
+                    <td class="numeric">3.4%</td>
+                    <td class="numeric">10.0%</td>
+                    <td class="numeric">16.1%</td>
+                    <td class="numeric positive">+12.7%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Travel Under 10 min %</td>
+                    <td class="numeric">19.9%</td>
+                    <td class="numeric">17.8%</td>
+                    <td class="numeric">16.4%</td>
+                    <td class="numeric negative">-3.5%</td>
+                    <td class="numeric">-</td>
+                </tr>
+                <tr>
+                    <td>Travel 60+ min %</td>
+                    <td class="numeric">3.2%</td>
+                    <td class="numeric">4.3%</td>
+                    <td class="numeric">4.9%</td>
+                    <td class="numeric positive">+1.7%</td>
+                    <td class="numeric">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
